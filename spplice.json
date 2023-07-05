@@ -6,7 +6,7 @@
         "author": "alexz and Soulfur",
         "file": "https://raw.githubusercontent.com/alexzinyew/spplice-mods/main/backpack/backpack.tar.xz",
         "icon": "https://cdn.discordapp.com/attachments/1116851761991405658/1121130511826419712/backpack.png",
-        "description": "Portal 2, but you get a backpack.. pretty convenient!\n\nIMPORTANT: For custom backpack navigation keybinds, read 'Portal 2/portal2_tempcontent/cfg/backpack_binds.cfg'\nCredits:\nBlack_Semka, lampishboi - Bug testing\nSoulfur - Mod picture",
+        "description": "Portal 2, but you get a backpack.. pretty convenient!<br><br>IMPORTANT: For custom backpack navigation keybinds, read 'Portal 2/portal2_tempcontent/cfg/backpack_binds.cfg'<br>Credits:<br>Black_Semka, lampishboi - Bug testing<br>Soulfur - Mod picture",
         "weight": 0
       }
     ]
