@@ -3,9 +3,6 @@ IncludeScript("ppmod3")
 IncludeScript("util")
 
 //this code makes me sick, cry, and vomit
-//[[
-0x
-]]
 
 ::backpack <- {}
 backpack.ui_open <- false
