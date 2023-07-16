@@ -9,8 +9,8 @@ local blockEnts = [
     "models/props_underground/underground_boxdropper.mdl"
 ];
 local loopTime = FrameTime() * 3;
-local hurtAmount = 4;
-local mapSpawn = function ():(blockEnts,loopTime,hurtAmount) {
+hurtAmount = 4;
+local mapSpawn = function ():(blockEnts,loopTime) {
     local healthBar = ppmod.text("health", -1, -0.05);
     local plr = GetPlayer();
     local cameras = [];
@@ -21,14 +21,14 @@ local mapSpawn = function ():(blockEnts,loopTime,hurtAmount) {
         hasCameras = true;
     }
     if (hasCameras) {
-        ppmod.interval(function ():(blockEnts,loopTime,hurtAmount,healthBar,plr,cameras,hasCameras,camera) {
+        ppmod.interval(function ():(blockEnts,loopTime,healthBar,plr,cameras,hasCameras,camera) {
             //@ts-expect-error
             for (local index = 0; index < cameras.len(); index++) {
                 local camera = cameras[index];
                 local playerPosition = plr.EyePosition();
                 //@ts-expect-error
                 local cameraPosition = (camera.GetOrigin() + camera.GetForwardVector() * 18); // - Vector(0,0,28)
-                DebugDrawBox(cameraPosition, Vector(-4, -4, -4), Vector(4, 4, 4), 255, 255, 0, 1, loopTime + FrameTime());
+                //DebugDrawBox(cameraPosition, Vector(-4,-4,-4), Vector(4,4,4), 255, 255, 0, 1, loopTime + FrameTime())
                 //@ts-expect-error
                 local dir = playerPosition - cameraPosition;
                 //@ts-expect-error
@@ -43,7 +43,7 @@ local mapSpawn = function ():(blockEnts,loopTime,hurtAmount) {
             }
         }, loopTime, "stealth_loop");
     }
-    ppmod.interval(function ():(blockEnts,loopTime,hurtAmount,healthBar,plr,cameras,hasCameras,camera) {
+    ppmod.interval(function ():(blockEnts,loopTime,healthBar,plr,cameras,hasCameras,camera) {
         if (plr.GetHealth() <= 0) {
             ppmod.fire("stealth_loop", "Disable");
             healthBar.SetText("Health: 0");

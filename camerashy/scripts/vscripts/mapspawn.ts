@@ -13,7 +13,8 @@ let blockEnts = [
     "models/props_underground/underground_boxdropper.mdl"
 ]
 let loopTime = FrameTime() * 3
-let hurtAmount = 4
+//@ts-expect-error
+::hurtAmount = 4
 
 let mapSpawn = function(){
     let healthBar = ppmod.text("health", -1, -0.05)
