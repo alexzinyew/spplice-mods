@@ -9,7 +9,8 @@ local blockEnts = [
     "models/props_underground/underground_boxdropper.mdl"
 ];
 local loopTime = FrameTime() * 3;
-hurtAmount = 4;
+//@ts-expect-error
+::hurtAmount <- 4;
 local mapSpawn = function ():(blockEnts,loopTime) {
     local healthBar = ppmod.text("health", -1, -0.05);
     local plr = GetPlayer();

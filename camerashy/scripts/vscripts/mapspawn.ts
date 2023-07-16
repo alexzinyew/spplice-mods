@@ -14,7 +14,7 @@ let blockEnts = [
 ]
 let loopTime = FrameTime() * 3
 //@ts-expect-error
-::hurtAmount = 4
+var hurtAmount = 4
 
 let mapSpawn = function(){
     let healthBar = ppmod.text("health", -1, -0.05)
