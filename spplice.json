@@ -17,6 +17,15 @@
         "icon": "https://cdn.discordapp.com/attachments/779452203341447194/1130224397538562100/mrabeast.png",
         "description": "camera!!! YEEEOUUUCHHH!!!!!!!!!!!!!!",
         "weight": 0
+      },
+      {
+        "title": "Brainf Editor [BETA]",
+        "name": "brainfbeta",
+        "author": "alexz",
+        "file": "https://raw.githubusercontent.com/alexzinyew/spplice-mods/main/brainf/brainf.tar.xz",
+        "icon": "https://cdn.discordapp.com/emojis/1133935026434736138.webp?size=128&quality=lossless",
+        "description": "hackerman",
+        "weight": 0
       }
     ]
   }
